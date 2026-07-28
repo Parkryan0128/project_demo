@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="window">
+    <div class="titlebar">
+      <div class="traffic">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="titlebar-label" id="window-title">loading…</span>
+    </div>
+
+    <header class="site-header">
+      <div class="shell-intro" id="shell-intro"></div>
+
+      <div class="profile">
+        <div class="avatar" id="avatar" aria-hidden="true"></div>
+        <p class="role" id="role"></p>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Primary"></nav>
+    </header>
+
+    <main class="layout">
+      <aside id="experience" class="experience">
+        <h2 class="section-title"><span class="gt">&gt;</span> EXPERIENCE</h2>
+        <p class="cmd"><span class="gt">&gt;</span> cat experience.txt</p>
+        <ul class="exp-list" id="exp-list"></ul>
+      </aside>
+
+      <section id="projects" class="projects">
+        <h2 class="section-title"><span class="gt">&gt;</span> PROJECTS</h2>
+        <p class="cmd"><span class="gt">&gt;</span> ./featured-projects --all</p>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <p class="cmd"><span class="gt">&gt;</span> ./contact --help</p>
+      <p class="footer-links" id="footer-links"></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

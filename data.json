@@ -1,0 +1,112 @@
+{
+  "site": {
+    "title": "ubc-cs-senior.dev — Portfolio",
+    "hostname": "ubc-cs-senior.dev",
+    "shellUser": "user@ubc-portfolio",
+    "windowTitle": "user@ubc-portfolio: ~"
+  },
+  "profile": {
+    "name": "Your Name",
+    "initials": "YN",
+    "role": "UBC CS Senior | Software Engineer"
+  },
+  "nav": [
+    { "label": "HOME", "href": "#home", "active": true },
+    { "label": "EXPERIENCE", "href": "#experience" },
+    { "label": "PROJECTS", "href": "#projects" },
+    { "label": "CONTACT", "href": "#contact" }
+  ],
+  "experience": [
+    {
+      "logo": "AWS",
+      "company": "Amazon Web Services",
+      "title": "Software Engineer Intern",
+      "dates": "2024 – 2025",
+      "tags": ["React", "Node.js", "AWS", "Python"]
+    },
+    {
+      "logo": "MS",
+      "company": "Microsoft",
+      "title": "Software Engineer Intern",
+      "dates": "2023 – 2024",
+      "tags": ["C#", ".NET", "Azure", "TypeScript"]
+    },
+    {
+      "logo": "UBC",
+      "company": "UBC Research Lab",
+      "title": "Undergraduate Researcher",
+      "dates": "2022 – 2023",
+      "tags": ["Python", "PyTorch", "C++"]
+    },
+    {
+      "logo": "ST",
+      "company": "Startup Co.",
+      "title": "Full-Stack Developer",
+      "dates": "2021 – 2022",
+      "tags": ["Next.js", "PostgreSQL", "Docker"]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "video-streaming-player",
+      "description": "Low-latency adaptive streaming player with custom ABR logic and multi-codec support.",
+      "tags": ["C++", "Rust", "HLS", "MPEG-DASH"],
+      "links": [
+        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
+        { "label": "Architecture Diagram", "icon": "🖼️", "url": "#" }
+      ],
+      "media": { "label": "[ screenshot / gif ]" },
+      "span2": false
+    },
+    {
+      "slug": "distributed-cache",
+      "description": "In-memory distributed cache with consistent hashing, gossip membership, and TTL eviction.",
+      "tags": ["Go", "Redis", "gRPC", "Docker"],
+      "links": [
+        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
+        { "label": "Live Demo", "icon": "🔗", "url": "#" }
+      ],
+      "media": null,
+      "span2": false
+    },
+    {
+      "slug": "ml-pipeline-orchestrator",
+      "description": "Lightweight DAG runner for training jobs — retries, artifact versioning, and Slack alerts.",
+      "tags": ["Python", "Airflow", "AWS", "Kubernetes"],
+      "links": [
+        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
+        { "label": "GIF Demo", "icon": "🖼️", "url": "#" }
+      ],
+      "media": { "label": "[ pipeline demo gif ]" },
+      "span2": false
+    },
+    {
+      "slug": "realtime-collab-editor",
+      "description": "CRDT-based collaborative text editor with presence cursors and offline sync.",
+      "tags": ["TypeScript", "WebSocket", "Yjs", "React"],
+      "links": [
+        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
+        { "label": "Live Demo", "icon": "🔗", "url": "#" }
+      ],
+      "media": null,
+      "span2": false
+    },
+    {
+      "slug": "portfolio-cli",
+      "description": "This site — a terminal-inspired project index so LinkedIn stays clean and projects stay detailed.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "links": [
+        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
+        { "label": "Live Demo", "icon": "🔗", "url": "#" }
+      ],
+      "subCommand": "High-level web demo.",
+      "media": { "label": "[ site preview ]" },
+      "span2": true
+    }
+  ],
+  "contact": {
+    "email": "you@example.com",
+    "github": { "label": "github.com/yourname", "url": "#" },
+    "linkedin": { "label": "linkedin.com/in/yourname", "url": "#" }
+  }
+}
