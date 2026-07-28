@@ -23,9 +23,9 @@ function renderTags(tags, variant) {
 }
 
 function renderHeader(data) {
-  const { site, profile, nav } = data;
+  const { site, profile } = data;
 
-  document.title = site.title || "Portfolio";
+  document.title = site.title || "Ryan Park";
   document.getElementById("window-title").textContent = site.windowTitle || "";
 
   const shell = document.getElementById("shell-intro");
@@ -33,24 +33,26 @@ function renderHeader(data) {
 
   const line1 = el("p");
   line1.innerHTML = `<span class="prompt">${site.shellUser} ~ $</span> hostname --fqdn`;
+
   const line2 = el("p", "output", site.hostname);
+
   const line3 = el("p");
-  line3.innerHTML =
+  line3.innerHTML = `<span class="prompt">${site.shellUser} ~ $</span> whoami`;
+
+  const line4 = el("p", "output", profile.name);
+
+  const line5 = el("p");
+  line5.innerHTML = `<span class="prompt">${site.shellUser} ~ $</span> cat ~/about.txt`;
+
+  const line6 = el("p", "output", profile.role);
+
+  const line7 = el("p");
+  line7.innerHTML =
     `<span class="prompt">${site.shellUser} ~ $</span> ` +
-    `./contact --name <span class="string">"${profile.name}"</span>` +
+    `cat experience.txt && ./featured-projects --all` +
     `<span class="cursor" aria-hidden="true"></span>`;
-  shell.append(line1, line2, line3);
 
-  document.getElementById("avatar").textContent = profile.initials || "";
-  document.getElementById("role").textContent = profile.role || "";
-
-  const navEl = document.getElementById("nav");
-  navEl.innerHTML = "";
-  (nav || []).forEach((item) => {
-    const a = el("a", item.active ? "active" : null, item.label);
-    a.href = item.href || "#";
-    navEl.appendChild(a);
-  });
+  shell.append(line1, line2, line3, line4, line5, line6, line7);
 }
 
 function renderExperience(items) {
@@ -59,29 +61,62 @@ function renderExperience(items) {
 
   (items || []).forEach((job) => {
     const li = el("li", "exp-item");
-    const logo = el("div", "exp-logo", job.logo || "?");
+    const logo = el("div", "exp-logo");
     logo.setAttribute("aria-hidden", "true");
+
+    if (job.logoSrc) {
+      const img = document.createElement("img");
+      img.src = job.logoSrc;
+      img.alt = job.company || "";
+      logo.appendChild(img);
+    } else {
+      logo.textContent = job.logo || "?";
+    }
 
     const body = el("div", "exp-body");
     body.appendChild(el("p", "exp-company", job.company));
-    body.appendChild(
-      el("p", "exp-meta", `${job.title} · ${job.dates}`)
-    );
+    body.appendChild(el("p", "exp-meta", job.title));
+    body.appendChild(el("p", "exp-dates", job.dates));
     body.appendChild(renderTags(job.tags, "muted"));
 
     li.append(logo, body);
     list.appendChild(li);
   });
+
+  list.querySelectorAll(".exp-item").forEach((item, i) => {
+    item.style.animationDelay = `${0.05 + i * 0.08}s`;
+  });
 }
 
 function renderProject(project) {
-  const card = el("article", "project-card" + (project.span2 ? " span-2" : ""));
+  const card = el("article", "project-card");
 
-  card.appendChild(el("h3", "project-title", `> ./${project.slug}`));
-  card.appendChild(el("p", "project-desc", project.description));
+  const body = el("div", "project-body");
+  body.appendChild(el("h3", "project-title", `> ./${project.slug}`));
+  body.appendChild(el("p", "project-desc", project.description));
 
   if (project.tags?.length) {
-    card.appendChild(renderTags(project.tags, "amber"));
+    body.appendChild(renderTags(project.tags, "amber"));
+  }
+
+  if (project.subCommand) {
+    body.appendChild(el("p", "sub-cmd", `> ${project.subCommand}`));
+  }
+
+  if (project.links?.length) {
+    const actions = el("div", "project-actions");
+    project.links.forEach((link) => {
+      const line = el("p", "project-link");
+      const prompt = el("span", "prompt", "$");
+      const cmd = document.createTextNode(" open ");
+      const a = el("a", null, link.label);
+      a.href = link.url || "#";
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      line.append(prompt, cmd, a);
+      actions.appendChild(line);
+    });
+    body.appendChild(actions);
   }
 
   if (project.media) {
@@ -93,22 +128,9 @@ function renderProject(project) {
       media.textContent = "";
       media.appendChild(img);
     }
-    card.appendChild(media);
-  }
-
-  if (project.subCommand) {
-    card.appendChild(el("p", "sub-cmd", `> ${project.subCommand}`));
-  }
-
-  if (project.links?.length) {
-    const actions = el("div", "project-actions");
-    project.links.forEach((link) => {
-      const btn = el("a", "btn");
-      btn.href = link.url || "#";
-      btn.innerHTML = `[${link.label} <span class="icon">${link.icon || ""}</span>]`;
-      actions.appendChild(btn);
-    });
-    card.appendChild(actions);
+    card.append(body, media);
+  } else {
+    card.appendChild(body);
   }
 
   return card;
@@ -118,43 +140,55 @@ function renderProjects(projects) {
   const grid = document.getElementById("project-grid");
   grid.innerHTML = "";
   (projects || []).forEach((p) => grid.appendChild(renderProject(p)));
+  grid.querySelectorAll(".project-card").forEach((card, i) => {
+    card.style.animationDelay = `${0.12 + i * 0.1}s`;
+  });
 }
 
-function renderContact(contact) {
-  const footer = document.getElementById("footer-links");
-  if (!contact) {
-    footer.textContent = "";
-    return;
-  }
-
+function renderContact(site, contact) {
+  const footer = document.getElementById("footer-shell");
   footer.innerHTML = "";
-  footer.appendChild(el("span", "prompt", "$"));
-  footer.append(" email: ");
+  if (!contact) return;
 
+  const user = site?.shellUser || "ryan@ubc";
+
+  const cmd = el("p");
+  cmd.innerHTML = `<span class="prompt">${user} ~ $</span> ./contact --help`;
+  footer.appendChild(cmd);
+
+  const line = el("p", "output footer-links");
+
+  line.append("email: ");
   const mail = el("a", null, contact.email);
   mail.href = `mailto:${contact.email}`;
-  footer.appendChild(mail);
+  line.appendChild(mail);
 
   if (contact.github) {
-    footer.append(document.createTextNode(" | github: "));
+    line.append(document.createTextNode("  |  github: "));
     const g = el("a", null, contact.github.label);
     g.href = contact.github.url || "#";
-    footer.appendChild(g);
+    g.target = "_blank";
+    g.rel = "noopener noreferrer";
+    line.appendChild(g);
   }
 
   if (contact.linkedin) {
-    footer.append(document.createTextNode(" | linkedin: "));
+    line.append(document.createTextNode("  |  linkedin: "));
     const l = el("a", null, contact.linkedin.label);
     l.href = contact.linkedin.url || "#";
-    footer.appendChild(l);
+    l.target = "_blank";
+    l.rel = "noopener noreferrer";
+    line.appendChild(l);
   }
+
+  footer.appendChild(line);
 }
 
 function render(data) {
   renderHeader(data);
   renderExperience(data.experience);
   renderProjects(data.projects);
-  renderContact(data.contact);
+  renderContact(data.site, data.contact);
 }
 
 async function init() {

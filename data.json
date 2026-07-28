@@ -1,112 +1,81 @@
 {
   "site": {
-    "title": "ubc-cs-senior.dev — Portfolio",
-    "hostname": "ubc-cs-senior.dev",
-    "shellUser": "user@ubc-portfolio",
-    "windowTitle": "user@ubc-portfolio: ~"
+    "title": "Ryan Park",
+    "hostname": "ryanparkdev.com",
+    "shellUser": "ryan@ubc",
+    "windowTitle": "ryan@ubc: ~"
   },
   "profile": {
-    "name": "Your Name",
-    "initials": "YN",
-    "role": "UBC CS Senior | Software Engineer"
+    "name": "Ryan Park",
+    "role": "4th Year UBC CS Student · Expected Graduation May 2028"
   },
-  "nav": [
-    { "label": "HOME", "href": "#home", "active": true },
-    { "label": "EXPERIENCE", "href": "#experience" },
-    { "label": "PROJECTS", "href": "#projects" },
-    { "label": "CONTACT", "href": "#contact" }
-  ],
   "experience": [
     {
-      "logo": "AWS",
-      "company": "Amazon Web Services",
+      "logo": "DW",
+      "logoSrc": "assets/logos/dwave.png",
+      "company": "D-Wave Systems Inc.",
       "title": "Software Engineer Intern",
-      "dates": "2024 – 2025",
-      "tags": ["React", "Node.js", "AWS", "Python"]
+      "dates": "Sep 2026 – Current",
+      "tags": ["C++", "Python"]
     },
     {
-      "logo": "MS",
-      "company": "Microsoft",
+      "logo": "UH",
+      "logoSrc": "assets/logos/optum.svg",
+      "company": "UnitedHealth Group, Optum",
       "title": "Software Engineer Intern",
-      "dates": "2023 – 2024",
-      "tags": ["C#", ".NET", "Azure", "TypeScript"]
-    },
-    {
-      "logo": "UBC",
-      "company": "UBC Research Lab",
-      "title": "Undergraduate Researcher",
-      "dates": "2022 – 2023",
-      "tags": ["Python", "PyTorch", "C++"]
-    },
-    {
-      "logo": "ST",
-      "company": "Startup Co.",
-      "title": "Full-Stack Developer",
-      "dates": "2021 – 2022",
-      "tags": ["Next.js", "PostgreSQL", "Docker"]
+      "dates": "Jan 2026 – Aug 2026",
+      "tags": ["C++", "C#"]
     }
   ],
   "projects": [
     {
-      "slug": "video-streaming-player",
-      "description": "Low-latency adaptive streaming player with custom ABR logic and multi-codec support.",
-      "tags": ["C++", "Rust", "HLS", "MPEG-DASH"],
+      "slug": "opti-route",
+      "description": "Vehicle-routing engine using Simulated Annealing and local search, exposed via a Django REST API with Celery/Redis async jobs and a native C++ core through pybind11.",
+      "tags": ["C++", "Python", "Django", "Redis", "Celery"],
       "links": [
-        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
-        { "label": "Architecture Diagram", "icon": "🖼️", "url": "#" }
+        { "label": "github", "url": "https://github.com/Parkryan0128/opti-route" },
+        { "label": "demo", "url": "https://optiroute.ryanparkdev.com/" }
       ],
-      "media": { "label": "[ screenshot / gif ]" },
-      "span2": false
+      "media": { "label": "[ opti-route screenshot / gif ]" }
     },
     {
-      "slug": "distributed-cache",
-      "description": "In-memory distributed cache with consistent hashing, gossip membership, and TTL eviction.",
-      "tags": ["Go", "Redis", "gRPC", "Docker"],
+      "slug": "lan-file-transfer",
+      "description": "Peer-to-peer LAN file-transfer app over QUIC with chunked transfers, network backpressure, mDNS/DNS-SD discovery, TLS, and SHA-256 integrity checks.",
+      "tags": ["C++", "QUIC", "Networking", "TLS"],
       "links": [
-        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
-        { "label": "Live Demo", "icon": "🔗", "url": "#" }
+        { "label": "github", "url": "https://github.com/parkryan0128/LFT" }
       ],
-      "media": null,
-      "span2": false
+      "media": { "label": "[ LAN transfer demo gif ]" }
     },
     {
-      "slug": "ml-pipeline-orchestrator",
-      "description": "Lightweight DAG runner for training jobs — retries, artifact versioning, and Slack alerts.",
-      "tags": ["Python", "Airflow", "AWS", "Kubernetes"],
+      "slug": "custom-memory-allocator",
+      "description": "Fixed-size block allocator with intrusive free lists and lazy bump allocation — ~35% faster allocation latency than system malloc/free in single- and multi-threaded workloads.",
+      "tags": ["C", "C++", "Python"],
       "links": [
-        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
-        { "label": "GIF Demo", "icon": "🖼️", "url": "#" }
+        { "label": "github", "url": "https://github.com/parkryan0128/CustomMemoryAllocator" },
+        { "label": "demo", "url": "https://parkryan0128.github.io/CustomMemoryAllocator/" }
       ],
-      "media": { "label": "[ pipeline demo gif ]" },
-      "span2": false
+      "media": { "label": "[ allocator benchmark screenshot ]" }
     },
     {
-      "slug": "realtime-collab-editor",
-      "description": "CRDT-based collaborative text editor with presence cursors and offline sync.",
-      "tags": ["TypeScript", "WebSocket", "Yjs", "React"],
+      "slug": "ubc-insights",
+      "description": "React app for searching and visualizing UBC course and classroom data, backed by a Node.js/Express REST API and indexed MongoDB.",
+      "tags": ["TypeScript", "React", "Node.js", "MongoDB"],
       "links": [
-        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
-        { "label": "Live Demo", "icon": "🔗", "url": "#" }
+        { "label": "demo", "url": "https://d22zr4zfa5e0hx.cloudfront.net/" }
       ],
-      "media": null,
-      "span2": false
-    },
-    {
-      "slug": "portfolio-cli",
-      "description": "This site — a terminal-inspired project index so LinkedIn stays clean and projects stay detailed.",
-      "tags": ["HTML", "CSS", "JavaScript"],
-      "links": [
-        { "label": "GitHub Code", "icon": "🔗", "url": "#" },
-        { "label": "Live Demo", "icon": "🔗", "url": "#" }
-      ],
-      "subCommand": "High-level web demo.",
-      "media": { "label": "[ site preview ]" },
-      "span2": true
+      "media": { "label": "[ UBC Insights UI screenshot ]" }
     }
   ],
   "contact": {
-    "email": "you@example.com",
-    "github": { "label": "github.com/yourname", "url": "#" },
-    "linkedin": { "label": "linkedin.com/in/yourname", "url": "#" }
+    "email": "parkryan0128@gmail.com",
+    "github": {
+      "label": "github.com/parkryan0128",
+      "url": "https://github.com/parkryan0128"
+    },
+    "linkedin": {
+      "label": "linkedin.com/in/parkryan0128",
+      "url": "https://www.linkedin.com/in/parkryan0128/"
+    }
   }
 }
