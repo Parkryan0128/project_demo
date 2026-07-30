@@ -42,14 +42,14 @@ function renderHeader(data) {
   const line4 = el("p", "output", profile.name);
 
   const line5 = el("p");
-  line5.innerHTML = `<span class="prompt">${site.shellUser} ~ $</span> cat ~/about.txt`;
+  line5.innerHTML = `<span class="prompt">${site.shellUser} ~ $</span> cat about.txt`;
 
   const line6 = el("p", "output", profile.role);
 
   const line7 = el("p");
   line7.innerHTML =
     `<span class="prompt">${site.shellUser} ~ $</span> ` +
-    `cat experience.txt && ./featured-projects --all` +
+    `cat experience.txt projects.txt` +
     `<span class="cursor" aria-hidden="true"></span>`;
 
   shell.append(line1, line2, line3, line4, line5, line6, line7);
@@ -77,6 +77,9 @@ function renderExperience(items) {
     body.appendChild(el("p", "exp-company", job.company));
     body.appendChild(el("p", "exp-meta", job.title));
     body.appendChild(el("p", "exp-dates", job.dates));
+    if (job.description) {
+      body.appendChild(el("p", "exp-desc", job.description));
+    }
     body.appendChild(renderTags(job.tags, "muted"));
 
     li.append(logo, body);
@@ -97,10 +100,6 @@ function renderProject(project) {
 
   if (project.tags?.length) {
     body.appendChild(renderTags(project.tags, "amber"));
-  }
-
-  if (project.subCommand) {
-    body.appendChild(el("p", "sub-cmd", `> ${project.subCommand}`));
   }
 
   if (project.links?.length) {
@@ -124,7 +123,9 @@ function renderProject(project) {
     if (project.media.src) {
       const img = document.createElement("img");
       img.src = project.media.src;
-      img.alt = project.slug || "project media";
+      img.alt = project.media.label || project.slug || "project media";
+      img.loading = "lazy";
+      img.decoding = "async";
       media.textContent = "";
       media.appendChild(img);
     }
@@ -153,32 +154,40 @@ function renderContact(site, contact) {
   const user = site?.shellUser || "ryan@ubc";
 
   const cmd = el("p");
-  cmd.innerHTML = `<span class="prompt">${user} ~ $</span> ./contact --help`;
+  cmd.innerHTML = `<span class="prompt">${user} ~ $</span> cat contact.txt`;
   footer.appendChild(cmd);
 
   const line = el("p", "output footer-links");
 
-  line.append("email: ");
+  const mailItem = el("span", "footer-item");
+  mailItem.append("email: ");
   const mail = el("a", null, contact.email);
   mail.href = `mailto:${contact.email}`;
-  line.appendChild(mail);
+  mailItem.appendChild(mail);
+  line.appendChild(mailItem);
 
   if (contact.github) {
-    line.append(document.createTextNode("  |  github: "));
+    const sep = el("span", "footer-sep", " | ");
+    const gItem = el("span", "footer-item");
+    gItem.append("github: ");
     const g = el("a", null, contact.github.label);
     g.href = contact.github.url || "#";
     g.target = "_blank";
     g.rel = "noopener noreferrer";
-    line.appendChild(g);
+    gItem.appendChild(g);
+    line.append(sep, gItem);
   }
 
   if (contact.linkedin) {
-    line.append(document.createTextNode("  |  linkedin: "));
+    const sep = el("span", "footer-sep", " | ");
+    const lItem = el("span", "footer-item");
+    lItem.append("linkedin: ");
     const l = el("a", null, contact.linkedin.label);
     l.href = contact.linkedin.url || "#";
     l.target = "_blank";
     l.rel = "noopener noreferrer";
-    line.appendChild(l);
+    lItem.appendChild(l);
+    line.append(sep, lItem);
   }
 
   footer.appendChild(line);

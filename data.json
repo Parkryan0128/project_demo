@@ -15,7 +15,8 @@
       "logoSrc": "assets/logos/dwave.png",
       "company": "D-Wave Systems Inc.",
       "title": "Software Engineer Intern",
-      "dates": "Sep 2026 – Current",
+      "dates": "Sep 2026 - Current",
+      "description": "Incoming software engineer intern on the Hybrid Solver Service team.",
       "tags": ["C++", "Python"]
     },
     {
@@ -24,76 +25,77 @@
       "company": "UnitedHealth Group, Optum",
       "title": "Software Engineer Intern",
       "dates": "Jan 2026 – Aug 2026",
+      "description": "Worked on the SIArchive team to migrate patient data from Couchbase to Spanner and Bigtable.",
       "tags": ["C++", "C#"]
     }
   ],
   "projects": [
     {
       "slug": "opti-route",
-      "description": "Vehicle-routing engine using Simulated Annealing and local search, exposed via a Django REST API with Celery/Redis async jobs and a native C++ core through pybind11.",
+      "description": "A multi-vehicle delivery route planner — pick a depot and stops on a map, and it finds an approximate schedule that minimizes total travel time.",
       "tags": ["C++", "Python", "Django", "Redis", "Celery"],
       "links": [
         { "label": "github", "url": "https://github.com/Parkryan0128/opti-route" },
         { "label": "demo", "url": "https://optiroute.ryanparkdev.com/" }
       ],
-      "media": { "src": "assets/projects/opti-route.png", "label": "opti-route" }
+      "media": { "src": "assets/projects/opti-route.webp", "label": "opti-route" }
     },
     {
       "slug": "lan-file-transfer",
-      "description": "Peer-to-peer LAN file-transfer app over QUIC with chunked transfers, network backpressure, mDNS/DNS-SD discovery, TLS, and SHA-256 integrity checks.",
-      "tags": ["C++", "QUIC", "Networking", "TLS"],
+      "description": "A peer-to-peer LAN file transfer app — discover devices on the network, send files securely, and verify integrity when the transfer finishes.",
+      "tags": ["C++", "QUIC", "Networking"],
       "links": [
         { "label": "github", "url": "https://github.com/parkryan0128/LFT" }
       ],
-      "media": { "src": "assets/projects/LFT-app.png", "label": "LAN file transfer" }
+      "media": { "src": "assets/projects/LFT-app.webp", "label": "LAN file transfer" }
     },
     {
       "slug": "custom-memory-allocator",
-      "description": "Fixed-size block allocator with intrusive free lists and lazy bump allocation — ~35% faster allocation latency than system malloc/free in single- and multi-threaded workloads.",
+      "description": "A custom memory allocator for fixed-size blocks — faster allocation and free than the system allocator in both single- and multi-threaded workloads.",
       "tags": ["C", "C++", "Python"],
       "links": [
         { "label": "github", "url": "https://github.com/parkryan0128/CustomMemoryAllocator" },
         { "label": "demo", "url": "https://parkryan0128.github.io/CustomMemoryAllocator/" }
       ],
-      "media": { "src": "assets/projects/MemoryAllocator.png", "label": "custom memory allocator" }
+      "media": { "src": "assets/projects/MemoryAllocator.webp", "label": "custom memory allocator" }
     },
     {
       "slug": "ubc-insights",
-      "description": "React app for searching and visualizing UBC course and classroom data, backed by a Node.js/Express REST API and indexed MongoDB.",
+      "description": "A search and visualization tool for UBC course and classroom data — filter offerings and explore results in an interactive UI.",
       "tags": ["TypeScript", "React", "Node.js", "MongoDB"],
       "links": [
-        { "label": "demo", "url": "https://d22zr4zfa5e0hx.cloudfront.net/" }
+        { "label": "demo", "url": "https://ubcinsight.ryanparkdev.com/" }
       ],
-      "media": { "src": "assets/projects/ubc-insight.png", "label": "UBC Insights" }
+      "media": { "src": "assets/projects/ubc-insight.webp", "label": "UBC Insights" }
     },
     {
       "slug": "sudoku",
-      "description": "Java Swing Sudoku game with puzzle generation by difficulty, hints, notes, timed solves, and save/load — built to practice 2D arrays and OOP class design.",
+      "description": "A Sudoku game with difficulty levels, hints, notes, timed solves, and save/load so you can pause and continue a puzzle later.",
       "tags": ["Java", "Swing", "OOP"],
       "links": [
         { "label": "github", "url": "https://github.com/Parkryan0128/Sudoku" }
       ],
-      "media": { "src": "assets/projects/sudoku.png", "label": "Sudoku" }
+      "media": { "src": "assets/projects/sudoku.webp", "label": "Sudoku" }
     },
     {
       "slug": "jsx-text-editor",
-      "description": "JSX Text Editor is an in-browser playground where you write JSX and see a live preview update as you type. It supports multi-file projects, npm imports, shareable links, and built-in examples — all without any local setup.",
+      "description": "An in-browser JSX playground with live preview, multi-file projects, npm imports, shareable links, and built-in examples — no local setup required.",
       "tags": ["TypeScript", "React", "JSX"],
       "links": [
         { "label": "github", "url": "https://github.com/Parkryan0128/JSX-Text-Editor" },
         { "label": "demo", "url": "https://parkryan0128.github.io/JSX-Text-Editor/" }
       ],
-      "media": { "src": "assets/projects/JSX.png", "label": "JSX Text Editor" }
+      "media": { "src": "assets/projects/JSX.webp", "label": "JSX Text Editor" }
     },
     {
       "slug": "web-tetris",
-      "description": "A solo browser Tetris game built with React — classic piece drops, line clears, and keyboard controls, playable instantly in the browser.",
+      "description": "A solo browser Tetris game with classic piece drops, line clears, and keyboard controls — playable instantly with no install.",
       "tags": ["React", "JavaScript"],
       "links": [
         { "label": "github", "url": "https://github.com/Parkryan0128/tetris-react" },
         { "label": "demo", "url": "https://parkryan0128.github.io/tetris-react/" }
       ],
-      "media": { "src": "assets/projects/tetris.png", "label": "Web Tetris" }
+      "media": { "src": "assets/projects/tetris.webp", "label": "Web Tetris" }
     }
   ],
   "contact": {

@@ -11,7 +11,6 @@
   --amber: #e1b066;
   --amber-dim: rgba(225, 176, 102, 0.25);
   --prompt: #4af626;
-  --string: #e1b066;
   --radius: 6px;
   --font: "IBM Plex Mono", "Courier New", monospace;
 }
@@ -82,7 +81,6 @@ a:hover {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
 }
 
@@ -93,6 +91,7 @@ a:hover {
   padding: 10px 14px;
   background: #111;
   border-bottom: 1px solid var(--border);
+  border-radius: 10px 10px 0 0;
 }
 
 .traffic {
@@ -104,6 +103,13 @@ a:hover {
   width: 11px;
   height: 11px;
   border-radius: 50%;
+  cursor: default;
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.dot:active {
+  transform: scale(0.82);
+  filter: brightness(0.85);
 }
 
 .dot.red { background: #ff5f56; }
@@ -136,10 +142,6 @@ a:hover {
 .output {
   color: var(--text-dim);
   padding-left: 0;
-}
-
-.string {
-  color: var(--string);
 }
 
 .cursor {
@@ -177,6 +179,14 @@ a:hover {
 }
 
 /* ---------- Experience ---------- */
+.experience {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
 .exp-list {
   list-style: none;
   display: flex;
@@ -230,6 +240,13 @@ a:hover {
 .exp-dates {
   color: var(--text-dim);
   font-size: 11px;
+  margin: 0 0 6px;
+}
+
+.exp-desc {
+  color: var(--text);
+  font-size: 11.5px;
+  line-height: 1.45;
   margin: 0 0 8px;
 }
 
@@ -413,20 +430,25 @@ a:hover {
   text-decoration-color: #f0c98a;
 }
 
-.sub-cmd {
-  color: var(--green);
-  font-size: 12px;
-  margin-top: 4px;
-}
-
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 20px 32px 28px;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
 }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
+  .experience {
+    position: static;
+  }
+
   .layout {
     grid-template-columns: 1fr;
   }
@@ -451,10 +473,25 @@ a:hover {
     border-right: none;
   }
 
+  .titlebar,
+  .site-footer {
+    border-radius: 0;
+  }
+
   .site-header,
   .layout,
   .site-footer {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .footer-sep {
+    display: none;
   }
 }
