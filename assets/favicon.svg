@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Ryan Park">
+  <rect width="32" height="32" rx="6" fill="#0d0d0d"/>
+  <rect x="1" y="1" width="30" height="30" rx="5" fill="none" stroke="#2d9a18" stroke-width="1.5"/>
+  <text x="16" y="22" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700" fill="#4af626">RP</text>
+</svg>

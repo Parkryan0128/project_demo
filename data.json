@@ -36,7 +36,7 @@
         { "label": "github", "url": "https://github.com/Parkryan0128/opti-route" },
         { "label": "demo", "url": "https://optiroute.ryanparkdev.com/" }
       ],
-      "media": { "label": "[ opti-route screenshot / gif ]" }
+      "media": { "src": "assets/projects/opti-route.png", "label": "opti-route" }
     },
     {
       "slug": "lan-file-transfer",
@@ -45,7 +45,7 @@
       "links": [
         { "label": "github", "url": "https://github.com/parkryan0128/LFT" }
       ],
-      "media": { "label": "[ LAN transfer demo gif ]" }
+      "media": { "src": "assets/projects/LFT-app.png", "label": "LAN file transfer" }
     },
     {
       "slug": "custom-memory-allocator",
@@ -55,7 +55,7 @@
         { "label": "github", "url": "https://github.com/parkryan0128/CustomMemoryAllocator" },
         { "label": "demo", "url": "https://parkryan0128.github.io/CustomMemoryAllocator/" }
       ],
-      "media": { "label": "[ allocator benchmark screenshot ]" }
+      "media": { "src": "assets/projects/MemoryAllocator.png", "label": "custom memory allocator" }
     },
     {
       "slug": "ubc-insights",
@@ -64,7 +64,36 @@
       "links": [
         { "label": "demo", "url": "https://d22zr4zfa5e0hx.cloudfront.net/" }
       ],
-      "media": { "label": "[ UBC Insights UI screenshot ]" }
+      "media": { "src": "assets/projects/ubc-insight.png", "label": "UBC Insights" }
+    },
+    {
+      "slug": "sudoku",
+      "description": "Java Swing Sudoku game with puzzle generation by difficulty, hints, notes, timed solves, and save/load — built to practice 2D arrays and OOP class design.",
+      "tags": ["Java", "Swing", "OOP"],
+      "links": [
+        { "label": "github", "url": "https://github.com/Parkryan0128/Sudoku" }
+      ],
+      "media": { "src": "assets/projects/sudoku.png", "label": "Sudoku" }
+    },
+    {
+      "slug": "jsx-text-editor",
+      "description": "JSX Text Editor is an in-browser playground where you write JSX and see a live preview update as you type. It supports multi-file projects, npm imports, shareable links, and built-in examples — all without any local setup.",
+      "tags": ["TypeScript", "React", "JSX"],
+      "links": [
+        { "label": "github", "url": "https://github.com/Parkryan0128/JSX-Text-Editor" },
+        { "label": "demo", "url": "https://parkryan0128.github.io/JSX-Text-Editor/" }
+      ],
+      "media": { "src": "assets/projects/JSX.png", "label": "JSX Text Editor" }
+    },
+    {
+      "slug": "web-tetris",
+      "description": "A solo browser Tetris game built with React — classic piece drops, line clears, and keyboard controls, playable instantly in the browser.",
+      "tags": ["React", "JavaScript"],
+      "links": [
+        { "label": "github", "url": "https://github.com/Parkryan0128/tetris-react" },
+        { "label": "demo", "url": "https://parkryan0128.github.io/tetris-react/" }
+      ],
+      "media": { "src": "assets/projects/tetris.png", "label": "Web Tetris" }
     }
   ],
   "contact": {
