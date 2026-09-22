@@ -32,7 +32,7 @@ function renderHeader(data) {
   shell.innerHTML = "";
 
   const line1 = el("p");
-  line1.innerHTML = `<span class="prompt">${site.shellUser} ~ $</span> hostname --fqdn`;
+  line1.innerHTML = `<span class="prompt">${site.shellUser} ~ $</span> hostname --f`;
 
   const line2 = el("p", "output", site.hostname);
 
