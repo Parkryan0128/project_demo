@@ -11,6 +11,15 @@
   },
   "experience": [
     {
+      "logo": "Intel",
+      "logoSrc": "assets/logos/intel.svg",
+      "company": "Intel",
+      "title": "Systems Simulation Engineer Intern",
+      "dates": "Jan 2027 – Aug 2027",
+      "description": "Incoming systems simulation engineer intern at Intel.",
+      "tags": ["Systems Simulation"]
+    },
+    {
       "logo": "DW",
       "logoSrc": "assets/logos/dwave.png",
       "company": "D-Wave Systems Inc.",
@@ -30,6 +39,16 @@
     }
   ],
   "projects": [
+    {
+      "slug": "rust-kv-storage-engine",
+      "description": "An embedded key-value storage engine in Rust — persist data with write-ahead logging, recover after crashes, and keep disk storage efficient with background compaction.",
+      "tags": ["Rust", "LSM-tree", "WAL", "Bloom Filters"],
+      "links": [
+        { "label": "github", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine" },
+        { "label": "walkthrough", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine/blob/main/docs/demo.md" }
+      ],
+      "media": { "src": "assets/projects/rust-kv-storage-engine.png", "label": "Rust key-value storage engine explorer" }
+    },
     {
       "slug": "opti-route",
       "description": "A multi-vehicle delivery route planner — pick a depot and stops on a map, and it finds an approximate schedule that minimizes total travel time.",
