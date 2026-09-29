@@ -20,14 +20,6 @@
       "tags": ["Systems Simulation"]
     },
     {
-      "logo": "UAS",
-      "logoSrc": "assets/logos/ubc-uas.png",
-      "company": "UBC Uncrewed Aircraft Systems",
-      "title": "Software Team Member",
-      "description": "Contributing to embedded systems and autonomy software for uncrewed aircraft.",
-      "tags": ["Embedded Systems", "Autonomy"]
-    },
-    {
       "logo": "DW",
       "logoSrc": "assets/logos/dwave.png",
       "company": "D-Wave Systems Inc.",
@@ -35,6 +27,15 @@
       "dates": "Sep 2026 - Current",
       "description": "Incoming software engineer intern on the Hybrid Solver Service team.",
       "tags": ["C++", "Python"]
+    },
+    {
+      "logo": "UAS",
+      "logoSrc": "assets/logos/ubc-uas.png",
+      "company": "UBC Uncrewed Aircraft Systems",
+      "title": "Software Team Member",
+      "dates": "Sep 2026 – Current",
+      "description": "Contributing to embedded systems and autonomy software for uncrewed aircraft.",
+      "tags": ["Embedded Systems", "Autonomy"]
     },
     {
       "logo": "UH",
