@@ -63,7 +63,7 @@
         }
       ],
       "media": {
-        "src": "assets/projects/relation-guard-concept.jpg",
+        "src": "assets/projects/relation-guard-distinct.jpg",
         "label": "Access permissions illustration"
       }
     },
@@ -88,7 +88,7 @@
         }
       ],
       "media": {
-        "src": "assets/projects/inventory-reservation-service-concept.jpg",
+        "src": "assets/projects/inventory-reservation-service-distinct.jpg",
         "label": "Reserved inventory illustration"
       }
     },
@@ -111,7 +111,7 @@
         }
       ],
       "media": {
-        "src": "assets/projects/distributed-job-runner-concept.jpg",
+        "src": "assets/projects/distributed-job-runner-distinct.jpg",
         "label": "Job queue and workers illustration"
       }
     },
@@ -123,7 +123,7 @@
         { "label": "github", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine" },
         { "label": "walkthrough", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine/blob/main/docs/demo.md" }
       ],
-      "media": { "src": "assets/projects/rust-kv-storage-engine-concept.jpg", "label": "Key-value storage layers illustration" }
+      "media": { "src": "assets/projects/rust-kv-storage-engine-distinct.jpg", "label": "Key-value storage layers illustration" }
     },
     {
       "slug": "opti-route",
