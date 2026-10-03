@@ -49,6 +49,25 @@
   ],
   "projects": [
     {
+      "slug": "relation-guard",
+      "description": "An authorization service in Rust — check access to documents, inherit permissions through teams and folders, and manage sharing with an audit trail.",
+      "tags": [
+        "Rust",
+        "Axum",
+        "PostgreSQL"
+      ],
+      "links": [
+        {
+          "label": "github (private)",
+          "url": "https://github.com/Parkryan0128/relation-guard"
+        }
+      ],
+      "media": {
+        "src": "assets/projects/relation-guard-concept.jpg",
+        "label": "Access permissions illustration"
+      }
+    },
+    {
       "slug": "inventory-reservation-service",
       "description": "An inventory reservation service — reserve stock without overselling, handle payments and cancellations, and release unpaid reservations when they expire.",
       "tags": [
@@ -69,8 +88,8 @@
         }
       ],
       "media": {
-        "src": "assets/projects/inventory-reservation-service.jpg",
-        "label": "Inventory reservation service demo"
+        "src": "assets/projects/inventory-reservation-service-concept.jpg",
+        "label": "Reserved inventory illustration"
       }
     },
     {
@@ -92,8 +111,8 @@
         }
       ],
       "media": {
-        "src": "assets/projects/distributed-job-runner.jpg",
-        "label": "Distributed job runner queue monitor"
+        "src": "assets/projects/distributed-job-runner-concept.jpg",
+        "label": "Job queue and workers illustration"
       }
     },
     {
@@ -104,7 +123,7 @@
         { "label": "github", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine" },
         { "label": "walkthrough", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine/blob/main/docs/demo.md" }
       ],
-      "media": { "src": "assets/projects/rust-kv-storage-engine.png", "label": "Rust key-value storage engine explorer" }
+      "media": { "src": "assets/projects/rust-kv-storage-engine-concept.jpg", "label": "Key-value storage layers illustration" }
     },
     {
       "slug": "opti-route",
