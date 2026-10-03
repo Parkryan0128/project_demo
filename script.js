@@ -7,7 +7,7 @@
  * then open http://localhost:8000
  */
 
-const DATA_URL = "data.json?v=illustrations-2";
+const DATA_URL = "data.json?v=inventory-3";
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
