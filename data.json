@@ -49,6 +49,54 @@
   ],
   "projects": [
     {
+      "slug": "inventory-reservation-service",
+      "description": "An inventory reservation service — reserve stock without overselling, handle payments and cancellations, and release unpaid reservations when they expire.",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "Redis",
+        "Kafka"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/Parkryan0128/inventory-reservation-service"
+        },
+        {
+          "label": "demo",
+          "url": "https://inventory.ryanparkdev.com/"
+        }
+      ],
+      "media": {
+        "src": "assets/projects/inventory-reservation-service.jpg",
+        "label": "Inventory reservation service demo"
+      }
+    },
+    {
+      "slug": "distributed-job-runner",
+      "description": "A distributed job queue in Go — run tasks across workers, retry failures, and recover unfinished jobs when a worker stops, with a live web console to follow execution.",
+      "tags": [
+        "Go",
+        "PostgreSQL",
+        "SSE"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/Parkryan0128/distributed-job-runner"
+        },
+        {
+          "label": "demo",
+          "url": "https://distributed-job-runner.ryanparkdev.com/"
+        }
+      ],
+      "media": {
+        "src": "assets/projects/distributed-job-runner.jpg",
+        "label": "Distributed job runner queue monitor"
+      }
+    },
+    {
       "slug": "rust-kv-storage-engine",
       "description": "An embedded key-value storage engine in Rust — persist data with write-ahead logging, recover after crashes, and keep disk storage efficient with background compaction.",
       "tags": ["Rust", "LSM-tree", "WAL", "Bloom Filters"],
