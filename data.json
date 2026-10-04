@@ -121,7 +121,7 @@
       "tags": ["Rust", "LSM-tree", "WAL", "Bloom Filters"],
       "links": [
         { "label": "github", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine" },
-        { "label": "walkthrough", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine/blob/main/docs/demo.md" }
+        { "label": "demo setup", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine/blob/main/README.md#local-demo" }
       ],
       "media": { "src": "assets/projects/rust-kv-storage-engine-distinct.jpg", "label": "Key-value storage layers illustration" }
     },
