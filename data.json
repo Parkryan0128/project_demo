@@ -127,7 +127,7 @@
     },
     {
       "slug": "opti-route",
-      "description": "A multi-vehicle delivery route planner — pick a depot and stops on a map, and it finds an approximate schedule that minimizes total travel time.",
+      "description": "A multi-vehicle delivery route planner — pick a depot and stops on a map, and it searches for routes that minimize the longest vehicle route using straight-line distances.",
       "tags": ["C++", "Python", "Django", "Redis", "Celery"],
       "links": [
         { "label": "github", "url": "https://github.com/Parkryan0128/opti-route" },
