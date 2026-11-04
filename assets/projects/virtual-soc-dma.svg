@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Virtual SoC DMA</title>
+  <desc id="desc">A RISC-V driver configures the DMA through MMIO. The DMA copies between RAM buffers and signals completion through the PLIC.</desc>
+  <rect width="800" height="450" fill="#111611"/>
+  <path d="M0 90H800M0 180H800M0 270H800M0 360H800M100 0V450M200 0V450M300 0V450M400 0V450M500 0V450M600 0V450M700 0V450" fill="none" stroke="#273327" opacity=".4"/>
+  <g font-family="monospace">
+    <text x="48" y="64" fill="#4af626" font-size="28">Virtual SoC DMA</text>
+    <text x="48" y="96" fill="#9a9a9a" font-size="16">QEMU / RISC-V / BARE-METAL C</text>
+    <g fill="#1a211a" stroke="#52644e" stroke-width="2">
+      <rect x="48" y="155" width="190" height="66" rx="5"/>
+      <rect x="316" y="155" width="150" height="66" rx="5" fill="#253b23" stroke="#4af626"/>
+      <rect x="48" y="296" width="190" height="56" rx="5"/>
+      <rect x="548" y="150" width="204" height="208" rx="5"/>
+    </g>
+    <g fill="#e8e8e8" font-size="20" text-anchor="middle">
+      <text x="143" y="195">RISC-V DRIVER</text>
+      <text x="391" y="195">DMA</text>
+      <text x="143" y="331">PLIC</text>
+      <text x="650" y="182">RAM</text>
+    </g>
+    <g fill="#253b23" stroke="#4af626">
+      <rect x="574" y="204" width="152" height="42" rx="3"/>
+      <rect x="574" y="294" width="152" height="42" rx="3"/>
+    </g>
+    <g fill="#e8e8e8" font-size="16" text-anchor="middle">
+      <text x="650" y="231">SOURCE</text>
+      <text x="650" y="321">DESTINATION</text>
+    </g>
+    <g fill="none" stroke="#4af626" stroke-width="2">
+      <path d="M238 188H306M296 180L306 188L296 196"/>
+      <path d="M466 188H508V225H564M554 217L564 225L554 233"/>
+      <path d="M650 248V284M642 274L650 284L658 274"/>
+    </g>
+    <g fill="none" stroke="#e1b066" stroke-width="2">
+      <path d="M391 221V324H248M258 316L248 324L258 332"/>
+      <path d="M143 296V231M135 241L143 231L151 241"/>
+    </g>
+    <text x="250" y="170" fill="#9a9a9a" font-size="15">MMIO</text>
+    <text x="665" y="275" fill="#4af626" font-size="15">COPY</text>
+    <text x="263" y="305" fill="#e1b066" font-size="15">IRQ</text>
+    <text x="48" y="411" fill="#9a9a9a" font-size="16">COPY / CANCEL / RECOVER</text>
+  </g>
+</svg>

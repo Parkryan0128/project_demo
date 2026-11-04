@@ -49,6 +49,29 @@
   ],
   "projects": [
     {
+      "slug": "virtual-soc-dma",
+      "description": "A DMA device for QEMU with a bare-metal RISC-V driver. Tests cover memory copies, interrupts, cancellation, and recovery from stalled transfers or lost interrupts.",
+      "tags": [
+        "C",
+        "QEMU",
+        "RISC-V"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/Parkryan0128/virtual-soc-dma"
+        },
+        {
+          "label": "device reference",
+          "url": "https://github.com/Parkryan0128/virtual-soc-dma/blob/main/docs/device.md"
+        }
+      ],
+      "media": {
+        "src": "assets/projects/virtual-soc-dma.svg",
+        "label": "DMA memory copy and PLIC interrupt flow in QEMU"
+      }
+    },
+    {
       "slug": "vquery",
       "description": "A C++20 query engine that compares row-at-a-time and batch processing for filtering, aggregation, and hash joins, with parallel execution and reproducible benchmarks.",
       "tags": [
