@@ -186,11 +186,12 @@
     },
     {
       "slug": "rust-kv-storage-engine",
-      "description": "An embedded key-value storage engine in Rust — persist data with write-ahead logging, recover after crashes, and keep disk storage efficient with background compaction.",
+      "description": "A persistent key-value store in Rust with crash recovery, atomic batches, and snapshot scans. Uses background compaction, Bloom filters, and a block cache.",
       "tags": ["Rust", "LSM-tree", "WAL", "Bloom Filters"],
       "links": [
         { "label": "github", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine" },
-        { "label": "demo setup", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine/blob/main/README.md#local-demo" }
+        { "label": "benchmarks", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine/blob/main/docs/benchmarks.md" },
+        { "label": "demo setup", "url": "https://github.com/Parkryan0128/rust-kv-storage-engine/blob/main/README.md#try-the-demo" }
       ],
       "media": { "src": "assets/projects/rust-kv-storage-engine-distinct.jpg", "label": "Key-value storage layers illustration" }
     },

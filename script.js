@@ -7,7 +7,7 @@
  * then open http://localhost:8000
  */
 
-const DATA_URL = "data.json?v=relation-guard-2";
+const DATA_URL = "data.json?v=rust-kv-update-1";
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
