@@ -67,8 +67,8 @@
         }
       ],
       "media": {
-        "src": "assets/projects/cuda-kernel-lab.svg",
-        "label": "1024 cubed FP32 GEMM device time: baseline 907.91 microseconds, register tiling 210.98, pedantic cuBLAS 128.74 on an RTX 4070 SUPER"
+        "src": "assets/projects/cuda-kernel-lab-illustration.png",
+        "label": "Illustration of a GPU processing data across parallel cores"
       }
     },
     {
@@ -90,8 +90,8 @@
         }
       ],
       "media": {
-        "src": "assets/projects/virtual-soc-dma.svg",
-        "label": "DMA memory copy and PLIC interrupt flow in QEMU"
+        "src": "assets/projects/virtual-soc-dma-illustration.png",
+        "label": "Illustration of data moving directly between two memory modules"
       }
     },
     {
@@ -113,8 +113,8 @@
         }
       ],
       "media": {
-        "src": "assets/projects/vquery.svg",
-        "label": "Row-at-a-time and batch query execution"
+        "src": "assets/projects/vquery-illustration.png",
+        "label": "Illustration of mixed data being filtered into a matching batch"
       }
     },
     {
