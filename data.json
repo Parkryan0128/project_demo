@@ -119,7 +119,7 @@
     },
     {
       "slug": "relation-guard",
-      "description": "An authorization service in Rust — check access to documents, inherit permissions through teams and folders, and manage sharing with an audit trail.",
+      "description": "A Rust service for managing access to folders and documents through team membership and inherited permissions. Handles concurrent permission changes and retries.",
       "tags": [
         "Rust",
         "Axum",
@@ -127,7 +127,7 @@
       ],
       "links": [
         {
-          "label": "github (private)",
+          "label": "github",
           "url": "https://github.com/Parkryan0128/relation-guard"
         }
       ],
