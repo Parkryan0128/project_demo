@@ -67,7 +67,7 @@
         }
       ],
       "media": {
-        "src": "assets/projects/cuda-kernel-lab-illustration.png",
+        "src": "assets/projects/cuda-kernel-lab-clean.svg",
         "label": "Illustration of a GPU processing data across parallel cores"
       }
     },
@@ -90,7 +90,7 @@
         }
       ],
       "media": {
-        "src": "assets/projects/virtual-soc-dma-illustration.png",
+        "src": "assets/projects/virtual-soc-dma-clean.svg",
         "label": "Illustration of data moving directly between two memory modules"
       }
     },

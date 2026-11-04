@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">GPU parallel processing</title>
+  <desc id="desc">A charcoal GPU with sixteen green processing cores arranged in a four by four array. Four parallel data paths carry packets through the processor.</desc>
+  <rect width="800" height="450" fill="#f3f5f6"/>
+  <g fill="none" stroke="#d5ddce" stroke-width="3">
+    <path d="M56 129H744M56 193H744M56 257H744M56 321H744"/>
+  </g>
+  <g fill="#aab3b8">
+    <path d="M292 49h24v30h-24zM356 49h24v30h-24zM420 49h24v30h-24zM484 49h24v30h-24zM292 371h24v30h-24zM356 371h24v30h-24zM420 371h24v30h-24zM484 371h24v30h-24z"/>
+    <path d="M224 117h30v24h-30zM224 181h30v24h-30zM224 245h30v24h-30zM224 309h30v24h-30zM546 117h30v24h-30zM546 181h30v24h-30zM546 245h30v24h-30zM546 309h30v24h-30z"/>
+  </g>
+  <rect x="248" y="73" width="304" height="304" rx="16" fill="#30383d"/>
+  <rect x="266" y="91" width="268" height="268" rx="8" fill="#424c50"/>
+  <g fill="#86b34a">
+    <rect x="280" y="105" width="48" height="48" rx="4"/><rect x="344" y="105" width="48" height="48" rx="4"/><rect x="408" y="105" width="48" height="48" rx="4"/><rect x="472" y="105" width="48" height="48" rx="4"/>
+    <rect x="280" y="169" width="48" height="48" rx="4"/><rect x="344" y="169" width="48" height="48" rx="4"/><rect x="408" y="169" width="48" height="48" rx="4"/><rect x="472" y="169" width="48" height="48" rx="4"/>
+    <rect x="280" y="233" width="48" height="48" rx="4"/><rect x="344" y="233" width="48" height="48" rx="4"/><rect x="408" y="233" width="48" height="48" rx="4"/><rect x="472" y="233" width="48" height="48" rx="4"/>
+    <rect x="280" y="297" width="48" height="48" rx="4"/><rect x="344" y="297" width="48" height="48" rx="4"/><rect x="408" y="297" width="48" height="48" rx="4"/><rect x="472" y="297" width="48" height="48" rx="4"/>
+  </g>
+  <g fill="#c8df9c">
+    <path d="M296 121h16v16h-16zM360 121h16v16h-16zM424 121h16v16h-16zM488 121h16v16h-16zM296 185h16v16h-16zM360 185h16v16h-16zM424 185h16v16h-16zM488 185h16v16h-16zM296 249h16v16h-16zM360 249h16v16h-16zM424 249h16v16h-16zM488 249h16v16h-16zM296 313h16v16h-16zM360 313h16v16h-16zM424 313h16v16h-16zM488 313h16v16h-16z"/>
+  </g>
+  <g fill="#86b34a">
+    <rect x="70" y="117" width="24" height="24" rx="3"/><rect x="118" y="117" width="24" height="24" rx="3"/><rect x="166" y="117" width="24" height="24" rx="3"/>
+    <rect x="70" y="181" width="24" height="24" rx="3"/><rect x="118" y="181" width="24" height="24" rx="3"/><rect x="166" y="181" width="24" height="24" rx="3"/>
+    <rect x="70" y="245" width="24" height="24" rx="3"/><rect x="118" y="245" width="24" height="24" rx="3"/><rect x="166" y="245" width="24" height="24" rx="3"/>
+    <rect x="70" y="309" width="24" height="24" rx="3"/><rect x="118" y="309" width="24" height="24" rx="3"/><rect x="166" y="309" width="24" height="24" rx="3"/>
+    <rect x="610" y="117" width="24" height="24" rx="3"/><rect x="658" y="117" width="24" height="24" rx="3"/><rect x="706" y="117" width="24" height="24" rx="3"/>
+    <rect x="610" y="181" width="24" height="24" rx="3"/><rect x="658" y="181" width="24" height="24" rx="3"/><rect x="706" y="181" width="24" height="24" rx="3"/>
+    <rect x="610" y="245" width="24" height="24" rx="3"/><rect x="658" y="245" width="24" height="24" rx="3"/><rect x="706" y="245" width="24" height="24" rx="3"/>
+    <rect x="610" y="309" width="24" height="24" rx="3"/><rect x="658" y="309" width="24" height="24" rx="3"/><rect x="706" y="309" width="24" height="24" rx="3"/>
+  </g>
+</svg>

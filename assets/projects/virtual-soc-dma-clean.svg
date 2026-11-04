@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Direct memory transfer</title>
+  <desc id="desc">Two memory modules connected by a direct data transfer path, with the processor separate above.</desc>
+  <rect width="800" height="450" fill="#FAF3ED"/>
+
+  <!-- The processor is deliberately outside the memory-to-memory path. -->
+  <g fill="#D3A46E">
+    <path d="M375 67h8v14h-8zm21 0h8v14h-8zm21 0h8v14h-8zM375 143h8v14h-8zm21 0h8v14h-8zm21 0h8v14h-8zM355 87h14v8h-14zm0 21h14v8h-14zm0 21h14v8h-14zM431 87h14v8h-14zm0 21h14v8h-14zm0 21h14v8h-14z"/>
+  </g>
+  <rect x="367" y="79" width="66" height="66" rx="7" fill="#C77961"/>
+  <rect x="380" y="92" width="40" height="40" rx="3" fill="#8E4036"/>
+
+  <!-- One clear, uninterrupted transfer lane. -->
+  <path d="M278 239h216v-17l30 29-30 29v-17H278z" fill="#DCA28B"/>
+  <g fill="#A34F3D">
+    <rect x="325" y="242" width="18" height="18" rx="3"/>
+    <rect x="367" y="242" width="18" height="18" rx="3"/>
+    <rect x="409" y="242" width="18" height="18" rx="3"/>
+    <rect x="451" y="242" width="18" height="18" rx="3"/>
+  </g>
+
+  <!-- DIMM boards use identical geometry and a single keyed contact gap. -->
+  <g id="memory-module">
+    <path d="M71 188h202a7 7 0 0 1 7 7v43a10 10 0 0 0 0 20v50a7 7 0 0 1-7 7H71a7 7 0 0 1-7-7v-50a10 10 0 0 0 0-20v-43a7 7 0 0 1 7-7z" fill="#C5765E"/>
+    <g fill="#813E36">
+      <rect x="82" y="211" width="50" height="73" rx="4"/>
+      <rect x="147" y="211" width="50" height="73" rx="4"/>
+      <rect x="212" y="211" width="50" height="73" rx="4"/>
+    </g>
+    <g fill="#D8AC71">
+      <path d="M76 300h12v22H76zM96 300h12v22H96zM116 300h12v22h-12zM136 300h12v22h-12zM176 300h12v22h-12zM196 300h12v22h-12zM216 300h12v22h-12zM236 300h12v22h-12zM256 300h12v22h-12z"/>
+    </g>
+    <path d="M156 304h12v18h-12z" fill="#FAF3ED"/>
+  </g>
+  <use href="#memory-module" transform="translate(456 0)"/>
+</svg>
