@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">CUDA Kernel Lab: FP32 matrix multiplication</title>
+  <desc id="desc">Device time for 1024 cubed GEMM on an RTX 4070 SUPER. Baseline: 907.91 microseconds. Register tiling: 210.98 microseconds. Pedantic FP32 cuBLAS: 128.74 microseconds. Lower is better.</desc>
+  <rect width="800" height="450" fill="#111611"/>
+  <path d="M0 90H800M0 180H800M0 270H800M0 360H800M100 0V450M200 0V450M300 0V450M400 0V450M500 0V450M600 0V450M700 0V450" fill="none" stroke="#273327" opacity=".4"/>
+  <g font-family="monospace">
+    <text x="48" y="64" fill="#4af626" font-size="28">CUDA Kernel Lab</text>
+    <text x="48" y="100" fill="#9a9a9a" font-size="20">1024³ FP32 GEMM · RTX 4070 SUPER</text>
+    <g fill="#e8e8e8" font-size="22">
+      <text x="48" y="160">Baseline</text>
+      <text x="752" y="160" text-anchor="end">907.91 µs</text>
+      <text x="48" y="240">Register tiling</text>
+      <text x="752" y="240" text-anchor="end">210.98 µs</text>
+      <text x="48" y="320">cuBLAS · pedantic FP32</text>
+      <text x="752" y="320" text-anchor="end">128.74 µs</text>
+    </g>
+    <rect x="48" y="174" width="704" height="24" rx="3" fill="#52644e"/>
+    <rect x="48" y="254" width="163.59" height="24" rx="3" fill="#4af626"/>
+    <rect x="48" y="334" width="99.82" height="24" rx="3" fill="#e1b066"/>
+    <text x="48" y="413" fill="#9a9a9a" font-size="20">Device time · lower is better</text>
+  </g>
+</svg>

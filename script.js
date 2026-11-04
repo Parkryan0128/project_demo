@@ -7,7 +7,7 @@
  * then open http://localhost:8000
  */
 
-const DATA_URL = "data.json?v=virtual-soc-dma-1";
+const DATA_URL = "data.json?v=cuda-kernel-lab-1";
 
 function el(tag, className, text) {
   const node = document.createElement(tag);

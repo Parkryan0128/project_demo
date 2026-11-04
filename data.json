@@ -49,6 +49,29 @@
   ],
   "projects": [
     {
+      "slug": "cuda-kernel-lab",
+      "description": "FP32 reduction, matrix multiplication, and bias/ReLU fusion in CUDA C++, with correctness tests and benchmarks against CUB and cuBLAS on an RTX 4070 SUPER.",
+      "tags": [
+        "CUDA",
+        "C++",
+        "GPU Optimization"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/Parkryan0128/cuda-kernel-lab"
+        },
+        {
+          "label": "benchmarks",
+          "url": "https://github.com/Parkryan0128/cuda-kernel-lab/blob/main/docs/case-studies/gemm.md"
+        }
+      ],
+      "media": {
+        "src": "assets/projects/cuda-kernel-lab.svg",
+        "label": "1024 cubed FP32 GEMM device time: baseline 907.91 microseconds, register tiling 210.98, pedantic cuBLAS 128.74 on an RTX 4070 SUPER"
+      }
+    },
+    {
       "slug": "virtual-soc-dma",
       "description": "A DMA device for QEMU with a bare-metal RISC-V driver. Tests cover memory copies, interrupts, cancellation, and recovery from stalled transfers or lost interrupts.",
       "tags": [
