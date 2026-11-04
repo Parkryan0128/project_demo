@@ -49,6 +49,29 @@
   ],
   "projects": [
     {
+      "slug": "vquery",
+      "description": "A C++20 query engine that compares row-at-a-time and batch processing for filtering, aggregation, and hash joins, with parallel execution and reproducible benchmarks.",
+      "tags": [
+        "C++20",
+        "Query Execution",
+        "Multithreading"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/Parkryan0128/vquery"
+        },
+        {
+          "label": "benchmarks",
+          "url": "https://github.com/Parkryan0128/vquery/blob/main/docs/performance.md"
+        }
+      ],
+      "media": {
+        "src": "assets/projects/vquery.svg",
+        "label": "Row-at-a-time and batch query execution"
+      }
+    },
+    {
       "slug": "relation-guard",
       "description": "An authorization service in Rust — check access to documents, inherit permissions through teams and folders, and manage sharing with an audit trail.",
       "tags": [

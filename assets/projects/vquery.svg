@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">VQuery: row and batch execution</title>
+  <desc id="desc">Individual rows and a batch of rows pass through filter and aggregate operators.</desc>
+  <rect width="800" height="450" fill="#111611"/>
+  <g fill="none" stroke="#273327" stroke-width="1">
+    <path d="M0 90H800M0 180H800M0 270H800M0 360H800M100 0V450M200 0V450M300 0V450M400 0V450M500 0V450M600 0V450M700 0V450" opacity=".4"/>
+  </g>
+  <g font-family="monospace">
+    <text x="48" y="64" fill="#4af626" font-size="28">VQuery</text>
+    <text x="48" y="96" fill="#9a9a9a" font-size="16">SAME QUERY. ROWS OR BATCHES.</text>
+    <text x="48" y="153" fill="#e8e8e8" font-size="18">ROW</text>
+    <text x="48" y="279" fill="#e8e8e8" font-size="18">BATCH</text>
+    <g fill="#253b23" stroke="#4af626" stroke-width="2">
+      <rect x="48" y="174" width="52" height="32" rx="4"/>
+      <rect x="116" y="174" width="52" height="32" rx="4"/>
+      <rect x="184" y="174" width="52" height="32" rx="4"/>
+      <rect x="48" y="298" width="188" height="60" rx="5"/>
+    </g>
+    <g stroke="#4af626" stroke-width="2">
+      <path d="M95 299V357M142 299V357M189 299V357"/>
+      <path d="M260 190H328M318 181L328 190L318 199M260 328H328M318 319L328 328L318 337" fill="none"/>
+    </g>
+    <g fill="#1a211a" stroke="#52644e" stroke-width="2">
+      <rect x="350" y="163" width="150" height="54" rx="5"/>
+      <rect x="350" y="301" width="150" height="54" rx="5"/>
+      <rect x="572" y="163" width="180" height="54" rx="5"/>
+      <rect x="572" y="301" width="180" height="54" rx="5"/>
+    </g>
+    <g fill="#e8e8e8" font-size="18" text-anchor="middle">
+      <text x="425" y="197">FILTER</text><text x="425" y="335">FILTER</text>
+      <text x="662" y="197">AGGREGATE</text><text x="662" y="335">AGGREGATE</text>
+    </g>
+    <path d="M516 190H552M542 181L552 190L542 199M516 328H552M542 319L552 328L542 337" fill="none" stroke="#e1b066" stroke-width="2"/>
+    <text x="48" y="411" fill="#9a9a9a" font-size="16">C++20 / IN-MEMORY QUERY ENGINE</text>
+  </g>
+</svg>
